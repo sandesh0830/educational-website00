@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Website</title>
+   
+   
+<!--Boostrap CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
+    
+    <!--Adding the stylesheet-->
+    <style>
+        .container:hover .overlay {
+  opacity: 1;
+   overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+   overflow-x: hidden;
+}
+
+.card .mb-2 {
+  text-align: center;
+   overflow-x: hidden;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+footer .container .row a{
+      color: white;
+  }
+
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  top: 0;
+  left: 0;
+  right: 0;
+ /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+  overflow-x: hidden;
+}
+    
+    .controls-top {
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+.navbar {
+
+font-size: 20px;
+}
+.navbar-nav > li {
+float: left;
+position: relative;
+}
+
+.nav-item a:hover {
+transform: scaleX(1.1);
+
+}
+</style>
+
+  </head>
+     <body>
+       <!--Responsive Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"><img src="studdy logo.png" width=7% height=50%></a>
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Course <span class="sr-only">(current)</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="course.html#android">Android Development</a>
+                    <a class="dropdown-item" href="course.html#arti">Artificial Intellegence</a>
+                    <a class="dropdown-item" href="course.html#graphic">Graphic Design</a>
+                    <a class="dropdown-item" href="course.html#web">Web Development </a>
+                    <a class="dropdown-item" href="course.html#ui/ux">UI/UX Design</a>
+                  
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+          </form>
+        </div>
+      </nav>
+
+      <!--End of Navbar-->
+      <br> <br>
+      <!--Carousel Wrapper-->
+
+      <div id="android">
+      <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+      
+        <!--Controls-->
+        <div class="controls-top">
+          <a class="btn-floating" href="#multi-item-example" data-slide="prev" ><i class="fas fa-chevron-left" ></i></a>
+          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+              class="fas fa-chevron-right" ></i></a>
+        </div>
+        <br> <br>
+        <!--/.Controls-->
+      
+        <!--Indicators-->
+        <ol class="carousel-indicators" >
+          <li data-target="#multi-item-example" data-slide-to="0" class="active" ></li>
+          <li data-target="#multi-item-example" data-slide-to="1" ></li>
+          
+        </ol>
+        <!--/.Indicators-->
+      
+        <!--Android Development-->
+        <h3 style="text-align: center;"> Android Development </h3>
+        
+        <br>
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+      
+          <!--First slide-->
+          <div class="carousel-item active">
+      
+            <div class="col-md-3" style="float:left">
+             <div class="card mb-2">
+              <div class="container">
+                <img class="card-img-top"
+                  src="https://cdn.lynda.com/course/585243/585243-637286213911365949-16x9.jpg" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">Design Pattern for  Mobile Architecture</p>
+             
+                </div> 
+              </div>
+            </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <div class="container">
+                <img class="card-img-top"
+                  src="https://d540vms5r2s2d.cloudfront.net/mad/uploads/mad_blog_5e834bdc69de51585662940.png" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">Beginners Guide to Android</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <div class="container">
+                <img class="card-img-top"
+                  src="data:image/jpeg;base64,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" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">Why to learn Android ?</p>
+              </div>
+            </div>
+          </div>
+            
+             <div class="col-md-3" style="float:left">
+             <div class="card mb-2">
+              <div class="container">
+                <img class="card-img-top"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmpmklpL7UWJkBFD6k4FyfrR_jziODbXbuQ&usqp=CAU" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">Learn Android Studio by making 5 App</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+          <!--/.First slide-->
+      
+          <!--Second slide-->
+          <div class="carousel-item">
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                <img class="card-img-top"
+                  src="data:image/jpeg;base64,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" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">Make your first App on Android Studio</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                 <img class="card-img-top"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYOFgpsxAPMeO_tyEOb5QSoh1Wi3b8SjjRhA&usqp=CAU" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text"> Android App Development : Advance </p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                 <img class="card-img-top"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS81GmIPorVe_RPUOYOyT1ob9NLv740s9l6Kw&usqp=CAU" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">Full Course on Android App Development</p>
+              </div>
+            </div>
+          </div>
+            
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                <img class="card-img-top"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLr5zKmXyxd1XvbwT6QO-bQ9b5_MwnkK4sVQ&usqp=CAU" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">Beginner Guide to Learn Kotlin</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+          <!--/.Second slide-->
+      
+         
+      
+        </div>
+        <!--/.Slides-->
+      
+      </div>
+      <!--/.Carousel Wrapper-->
+
+    </div>
+      <br> <br>
+      <!--Carousel Wrapper-->
+      <div id="arti">
+      <div id="multi-item-example2" class="carousel slide carousel-multi-item" data-ride="carousel">
+      
+        <!--Controls-->
+        <div class="controls-top">
+          <a class="btn-floating" href="#multi-item-example2" data-slide="prev" ><i class="fas fa-chevron-left" ></i></a>
+          <a class="btn-floating" href="#multi-item-example2" data-slide="next"><i
+              class="fas fa-chevron-right" ></i></a>
+        </div>
+        <br> <br>
+        <!--/.Controls-->
+      
+        <!--Indicators-->
+        <ol class="carousel-indicators" >
+          <li data-target="#multi-item-example" data-slide-to="0" class="active" ></li>
+          <li data-target="#multi-item-example" data-slide-to="1" ></li>
+          
+        </ol>
+        <!--/.Indicators-->
+      <!--Artificial Intelligence-->
+        <h3 style="text-align: center;"> Artificial Intelligence </h3>
+        
+        <br>
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+      
+          <!--First slide-->
+          <div class="carousel-item active">
+      
+            <div class="col-md-3" style="float:left">
+             <div class="card mb-2">
+              <div class="container">
+                <img class="card-img-top"
+                  src="Blockchain technology artificial intelligence and cyber space co.jfif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">WHAT IS ARTIFICIAL INTELLIGENCE</p>
+             
+                </div> 
+              </div>
+            </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <div class="container">
+                <img class="card-img-top"
+                  src="brain + circuit v_2.png" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">WHAT IS BRAIN AND CIRCUIT</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <div class="container">
+                <img class="card-img-top"
+                  src="https://www.cumanagement.com/sites/default/files/2018-09/AI-human-heads.jpg" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">DIFFERENCE BETWEEN HUMAN AND ROBOT</p>
+              </div>
+            </div>
+          </div>
+            
+             <div class="col-md-3" style="float:left">
+             <div class="card mb-2">
+              <div class="container">
+                <img class="card-img-top"
+                  src="Artificial Intelligence UI element.gif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">ELEMENT OF AL</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+          <!--/.First slide-->
+      
+          <!--Second slide-->
+          <div class="carousel-item">
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                <img class="card-img-top"
+                  src="Human vs robot_ Concept.jfif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">MORE ABOUT HUMAN AND ROBOT</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                 <img class="card-img-top"
+                  src="Blockchain technology artificial intelligence and cyber space co.jfif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">AI</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                 <img class="card-img-top"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_z7jyFVf8S28xTl1mZteXXZELax83NSCJ9A&usqp=CAU" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">HOW HUMAN AND ROBOT WORKS </p>
+              </div>
+            </div>
+          </div>
+            
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                <img class="card-img-top"
+                  src="Future of Artificial Intelligence in Design.jfif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">FUTURE OF AI</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+          <!--/.Second slide-->
+      
+         
+      
+        </div>
+        <!--/.Slides-->
+      
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+
+      <br> <br>
+      <!--Carousel Wrapper-->
+      <div id="graphic">
+      <div id="multi-item-example3" class="carousel slide carousel-multi-item" data-ride="carousel">
+      
+        <!--Controls-->
+        <div class="controls-top">
+          <a class="btn-floating" href="#multi-item-example3" data-slide="prev" ><i class="fas fa-chevron-left" ></i></a>
+          <a class="btn-floating" href="#multi-item-example3" data-slide="next"><i
+              class="fas fa-chevron-right" ></i></a>
+        </div>
+        <br> <br>
+        <!--/.Controls-->
+      
+        <!--Indicators-->
+        <ol class="carousel-indicators" >
+          <li data-target="#multi-item-example" data-slide-to="0" class="active" ></li>
+          <li data-target="#multi-item-example" data-slide-to="1" ></li>
+          
+        </ol>
+        <!--/.Indicators-->
+      <!--Graphic Design-->
+        <h3 style="text-align: center;"> Graphic Design </h3>
+        
+        <br>
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+      
+          <!--First slide-->
+          <div class="carousel-item active">
+      
+            <div class="col-md-3" style="float:left">
+             <div class="card mb-2">
+              <div class="container">
+                <img class="card-img-top"
+                  src="https://i.pinimg.com/564x/3e/25/1d/3e251d0cd562e796bb3529aba29e80b5.jpg" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">WHAT IS GRAPHIC DESIGN</p>
+             
+                </div> 
+              </div>
+            </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <div class="container">
+                <img class="card-img-top"
+                  src="yoooo.png" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">FLAT ILLUSTRATOR DESIGN</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <div class="container">
+                <img class="card-img-top"
+                  src="I stumbled across this image and would love to make it into a poster but don’t have a higher resolution photo_ Can anyone help_ Thanks guys.jpg" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">ABSTRACT DESIGN</p>
+              </div>
+            </div>
+          </div>
+            
+             <div class="col-md-3" style="float:left">
+             <div class="card mb-2">
+              <div class="container">
+                <img class="card-img-top"
+                  src="https://www.sessions.edu/wp-content/uploads/whats-in-adobe-creative-cloud.png" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">APPS USED FOR GRAPHIC DESIGN</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+          <!--/.First slide-->
+      
+          <!--Second slide-->
+          <div class="carousel-item">
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                <img class="card-img-top"
+                  src="Minimal Solar System HD wallpaper.jpg" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">MINIMAL DESIGN</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                 <img class="card-img-top"
+                  src="16 Graphic Design Trends 2020.jpg" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">NEON MINIMAL DESIGN  </p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                 <img class="card-img-top"
+                  src="g995.png" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">DIGITAL ILLUSTRATION</p>
+              </div>
+            </div>
+          </div>
+            
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                <img class="card-img-top"
+                  src="https://image.slidesharecdn.com/futureofgraphicdesign-140512032256-phpapp02/95/future-of-graphic-design-9-638.jpg?cb=1399865152" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">FUTURE OF GRAPHIC DESIGNER</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+          <!--/.Second slide-->
+      
+         
+      
+        </div>
+        <!--/.Slides-->
+      
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+
+      <br> <br>
+      <!--Carousel Wrapper-->
+      <div id="web">
+      <div id="multi-item-example4" class="carousel slide carousel-multi-item" data-ride="carousel">
+      
+        <!--Controls-->
+        <div class="controls-top">
+          <a class="btn-floating" href="#multi-item-example4" data-slide="prev" ><i class="fas fa-chevron-left" ></i></a>
+          <a class="btn-floating" href="#multi-item-example4" data-slide="next"><i
+              class="fas fa-chevron-right" ></i></a>
+        </div>
+        <br> <br>
+        <!--/.Controls-->
+      
+        <!--Indicators-->
+        <ol class="carousel-indicators" >
+          <li data-target="#multi-item-example" data-slide-to="0" class="active" ></li>
+          <li data-target="#multi-item-example" data-slide-to="1" ></li>
+          
+        </ol>
+        <!--/.Indicators-->
+      <!-- Web Development-->
+        <h3 style="text-align: center;"> Web Development </h3>
+        
+        <br>
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+      
+          <!--First slide-->
+          <div class="carousel-item active">
+      
+            <div class="col-md-3" style="float:left">
+             <div class="card mb-2">
+              <div class="container">
+                <img class="card-img-top"
+                  src="‘Web development flat illustration design’ by bernadsuper.jfif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">WHAT IS WEB DEVELOPMENT</p>
+             
+                </div> 
+              </div>
+            </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <div class="container">
+                <img class="card-img-top"
+                  src="Beginner's roadmap to web development.jfif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">BEGINMERS ROADMAP TO WEB DEVELOPMENT</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <div class="container">
+                <img class="card-img-top"
+                  src="https://www.arenach.com/wp-content/uploads/2019/08/web-development.jpeg" alt="card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">TRENDS OF WEB DEVELOPMENT</p>
+              </div>
+            </div>
+          </div>
+            
+             <div class="col-md-3" style="float:left">
+             <div class="card mb-2">
+              <div class="container">
+                <img class="card-img-top"
+                  src="https://www.brainstormindia.com/images/resources/web.jpg" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">PROJECTS OF WEB DEVELOPMENT</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+          <!--/.First slide-->
+      
+          <!--Second slide-->
+          <div class="carousel-item">
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                <img class="card-img-top"
+                  src="https://clever-solution.com/wp-content/uploads/2019/07/The-future-of-web-development-top-9-forecasts.jpg" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">WEB DEVELOPMENT BASICS</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                 <img class="card-img-top"
+                  src="https://toxsl.com/blog/image/47/post-1519034873-image_fileuser_id_6.png" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">DIFFERENT PROJECTS</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                 <img class="card-img-top"
+                  src="https://lvivity.com/wp-content/uploads/2019/01/web-frameworks.jpg" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">DIFFERENT FRAMEWORKS</p>
+              </div>
+            </div>
+          </div>
+            
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                <img class="card-img-top"
+                  src="https://www.flyingpenguins.in/blogs/wp-content/uploads/2019/11/ak2.jpg" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">FUTURE OF WEB DEVELOPMENT</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+          <!--/.Second slide-->
+      
+         
+      
+        </div>
+        <!--/.Slides-->
+      
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+
+      <br> <br>
+      <!--Carousel Wrapper-->
+      <div id="ui/ux">
+      <div id="multi-item-example5" class="carousel slide carousel-multi-item" data-ride="carousel">
+      
+        <!--Controls-->
+        <div class="controls-top">
+          <a class="btn-floating" href="#multi-item-example5" data-slide="prev" ><i class="fas fa-chevron-left" ></i></a>
+          <a class="btn-floating" href="#multi-item-example5" data-slide="next"><i
+              class="fas fa-chevron-right" ></i></a>
+        </div>
+        <br> <br>
+        <!--/.Controls-->
+      
+        <!--Indicators-->
+        <ol class="carousel-indicators" >
+          <li data-target="#multi-item-example" data-slide-to="0" class="active" ></li>
+          <li data-target="#multi-item-example" data-slide-to="1" ></li>
+          
+        </ol>
+        <!--/.Indicators-->
+      <!--UI/UX Design-->
+        <h3 style="text-align: center;"> UI/UX Design </h3>
+        
+        <br>
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+      
+          <!--First slide-->
+          <div class="carousel-item active">
+      
+            <div class="col-md-3" style="float:left">
+             <div class="card mb-2">
+              <div class="container">
+                <img class="card-img-top"
+                  src="Neumorphic Soft UI Kit - NEU.png" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">NEUMORPHIC UI DEISGN</p>
+             
+                </div> 
+              </div>
+            </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <div class="container">
+                <img class="card-img-top"
+                  src="Music Player UI Concept.png" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">MUSIC PLAYER UI</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <div class="container">
+                <img class="card-img-top"
+                  src="Daily design 27_100 - music webdesign UI_UX.jfif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">MUSIC WEB DESIGN </p>
+              </div>
+            </div>
+          </div>
+            
+             <div class="col-md-3" style="float:left">
+             <div class="card mb-2">
+              <div class="container">
+                <img class="card-img-top"
+                  src="Free Online Education UI Kit Concept.png" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">EDUCATION WEBSITE UI</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+          <!--/.First slide-->
+      
+          <!--Second slide-->
+          <div class="carousel-item">
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                <img class="card-img-top"
+                  src="Daily design 27_100 - music webdesign UI_UX.jfif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">MUSIC WEB DESIGN</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                 <img class="card-img-top"
+                  src="HUD UI - Speedometer.jfif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">HUD UI</p>
+              </div>
+            </div>
+          </div>
+      
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                 <img class="card-img-top"
+                  src="63 Beautiful  Dark UI Examples & Design Inspiration.png" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">DARK UI</p>
+              </div>
+            </div>
+          </div>
+            
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                 <div class="container">
+                <img class="card-img-top"
+                  src="Infographic Vector Illustration.jfif" alt="Card image cap" height="200px">
+                  <div class="overlay"><i class="far fa-heart"></i></div>
+                   <p class="card-text">INFOGRAPHIC UI</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+          <!--/.Second slide-->
+      
+         
+      
+        </div>
+        <!--/.Slides-->
+      
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+
+
+    <!-- Footer -->
+<footer class="page-footer font-small " style="background-color: cyan; color: white;">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+  
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Very long link 1</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 2</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 3</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+  
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+
+  <!--Bootstrap CDN-->
+  <!--Keet it Always at last-->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--End of bootstrap CDN-->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<!--Linking Javascript file-->    
+<script src="app.js"></script> 
+    </body>
+</html>
+
+
+

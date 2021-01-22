@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Website</title>
+   
+   
+<!--Boostrap CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
+    
+    <!--Adding the stylesheet-->
+    <style>
+        .navbar {
+
+font-size: 20px;
+}
+.navbar-nav > li {
+float: left;
+position: relative;
+}
+
+.nav-item a:hover {
+transform: scaleX(1.1);
+
+}
+.map-container-section {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container-section iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  width: 90%;
+
+
+  margin-left: auto;
+  margin-right: auto;
+ font-family: 'Roboto', sans-serif;
+
+  
+}
+.card  {
+  max-height: 550px;
+}
+a {
+      color: white;
+  }
+
+.card:hover {
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.4);
+
+}
+.cards {
+ 
+  
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+
+
+ 
+}
+
+
+    </style>
+  </head>
+     <body>
+       <!--Responsive Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"><img src="studdy logo.png" width=7% height=50%></a>
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="course.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Course 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="course.html#android">Android Development</a>
+                    <a class="dropdown-item" href="course.html#arti">Artificial Intellegence</a>
+                    <a class="dropdown-item" href="course.html#graphic">Graphic Design</a>
+                    <a class="dropdown-item" href="course.html#web">Web Development </a>
+                    <a class="dropdown-item" href="course.html#ui/ux">UI/UX Design</a>
+                  
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+          </form>
+        </div>
+      </nav>
+
+
+
+      <!--End of Navbar-->
+<section class="my-5" style="margin-top: 100px; text-align: center;" >
+
+  <!-- Section heading -->
+  
+ <h3 class="header" style="  text-decoration: underline; text-align: center;
+   text-underline-position: under; text-decoration-color: teal; width: 100%; margin-top: 40px; margin-bottom: 40px;">  
+CONTACT US
+
+</h3> 
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-5 mb-lg-0 mb-4">
+
+      <!-- Form with header -->
+      <div class="card" style="background-color: #3ecfd6; color: white;">
+        <div class="card-body" >
+          <!-- Header -->
+          <div class="form-header blue accent-1">
+            <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+          </div>
+          
+          <!-- Body -->
+          <div class="md-form" style="margin-top: 20px; ">
+           
+            <input type="text" id="form-name" class="form-control" placeholder="Name">
+            
+          </div>
+          <div class="md-form" style="margin-top: 20px;">
+           
+            <input type="text" id="form-email" class="form-control" placeholder="Email">
+           
+          </div>
+          <div class="md-form" style="margin-top: 20px;">
+           
+            <input type="text" id="form-Subject" class="form-control" placeholder="Contact number">
+            
+          </div>
+          <div class="md-form" style="margin-top: 20px;">
+          
+            <textarea id="form-text" class="form-control md-textarea" rows="3" placeholder="Message"></textarea>
+            
+          </div>
+           
+               <div class="text-center">
+                <button type="button" class="btn btn" style="margin-top: 5px; background-color: white;  ">SEND</button>
+              </div>
+        </div>
+      </div>
+      <!-- Form with header -->
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-7" >
+
+      
+      <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px; overflow-x: hidden;">
+       <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Tirupati%20Andhra%20Pradesh+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm">Plan A Journey</a></div>
+      </div>
+      <!-- Buttons-->
+      <div class="row text-center">
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+          <p>Door No: 18-1-10/12,
+
+KT Road, Bangalore
+
+</p>
+          <p class="mb-md-0">Bangaolre,
+517501</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <i class="fas fa-phone"></i>
+          </a>
+          <br> <br>
+          <p>+919677781212</p>
+                  </div>
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <br> <br>
+          <p>info@gmail.com</p>
+          
+        </div>
+      </div>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Contact v.1 -->
+
+<!-- Footer -->
+<footer class="page-footer font-small " style="background-color: cyan; color: white;">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+  
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Very long link 1</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 2</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 3</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+  
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+
+  <!--Bootstrap CDN-->
+  <!--Keet it Always at last-->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--End of bootstrap CDN-->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<!--Linking Javascript file-->    
+<script src="app.js"></script> 
+    </body>
+</html>
